@@ -1,4 +1,4 @@
-# PsAzureCombineUsersandDeviceID
+#  PsAzureAD-Intune-UserAndDeviceReport
 A quick report script that takes out Azure AD User and Device
 
 # Azure AD User and Device Export Script

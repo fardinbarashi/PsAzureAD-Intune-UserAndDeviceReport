@@ -106,7 +106,6 @@ Try
    } # End Do for usersUri
    while ($usersUri)
 
-
   do
    { # Start Do devicesUri
      $response = Invoke-RestMethod -Uri $devicesUri -Method GET -Headers $headers
@@ -142,9 +141,6 @@ Try
 Write-Host ""
 } # End Try
 
-
-
-
 Catch
 { # Start Catch
  Get-Date -Format "yyyy/MM/dd HH:mm:ss"
@@ -158,7 +154,6 @@ Catch
  $responseBody = $reader.ReadToEnd();
  Write-Warning "Response:" $responseBody
  Write-Warning $Error[0]
-
 
  Write-Host "Stopping Transcript and Script!" -ForegroundColor Red
  Stop-Transcript
